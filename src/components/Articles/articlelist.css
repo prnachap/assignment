@@ -1,0 +1,24 @@
+.article-container {
+  margin-top: 4rem;
+}
+.article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.article__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 0.5rem;
+}
+.article__title {
+  color: black;
+}
+
+.article__image {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
