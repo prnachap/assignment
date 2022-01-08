@@ -13,7 +13,6 @@ const Search = () => {
   const [formState, setFormState] = useState("");
 
   const handleChange = (e) => {
-    e.preventDefault();
     const value = e.target.value;
     getKeywords(value).then((data) => setTags(data.result));
     setFormState(value);
