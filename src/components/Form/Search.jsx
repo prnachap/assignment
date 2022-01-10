@@ -20,6 +20,7 @@ const Search = () => {
 
   const onSuggestionClick = (keyword) => {
     setFormState(keyword);
+    fetchData(keyword);
   };
 
   const handleSubmit = () => {
@@ -36,6 +37,7 @@ const Search = () => {
         <input
           type="text"
           id="search"
+          value={formState}
           className="input"
           onChange={handleChange}
         />
